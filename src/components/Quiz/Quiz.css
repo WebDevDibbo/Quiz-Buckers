@@ -1,0 +1,17 @@
+.quiz{
+    background-color: lightslategray;
+    padding: 15px 0;
+    box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
+    
+}
+.quiz img{
+    width: 50%;
+}
+.quiz button{
+    padding: 10px 25px;
+    background-color: #0050C0;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

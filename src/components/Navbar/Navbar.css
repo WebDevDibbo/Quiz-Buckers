@@ -1,0 +1,18 @@
+.navbar{
+    height: 80px;
+    background-color: #253e4f;
+    padding: 0 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar h2{
+    color: white;
+}
+ .navlink{
+    color: #FFFFFF;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s;
+}
