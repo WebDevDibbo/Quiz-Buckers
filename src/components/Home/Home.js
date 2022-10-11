@@ -8,6 +8,7 @@ const Home = () => {
 
   return (
     <div className="home">
+      <div className="homequiz">
       {quizes.map((quiz) => (
         <Quiz
          key={quiz.id} 
@@ -15,6 +16,7 @@ const Home = () => {
 
        </Quiz>
       ))}
+      </div>
     </div>
   );
 };
