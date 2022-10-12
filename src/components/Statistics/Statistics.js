@@ -39,7 +39,7 @@ const Statistics = () => {
   return (
     <div className="chart">
         
-      <LineChart height={500} width={400} data={data}>
+      <LineChart height={400} width={400} data={data}>
             <Line type="monotone" dataKey="total" stroke="#82ca9d" />
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
