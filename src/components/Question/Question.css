@@ -1,3 +1,15 @@
 svg{
-    width: 30px;
+    width: 20px;
+    cursor: pointer;
+   
+}
+.Details{
+    background-color: lightslategray;
+    padding: 15px;
+    border-radius: 10px;
+}
+.Details h1{
+    font-size: 20px;
+    display: inline;
+    
 }

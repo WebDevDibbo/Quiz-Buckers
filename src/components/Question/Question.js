@@ -6,12 +6,21 @@ import './Question.css'
 const Question = ({ questionDetails }) => {
   const { question, correctAnswer, options } = questionDetails;
 
+  const checkAnswer = (options) => {
+if(options === correctAnswer){
+    toast('You got the right answer')
+}
+else{
+    toast('You got the wrong answer')
+}
+  }
+
   const answer = () =>{
     toast(`correct answer is ${correctAnswer}`)
   }
   return (
-    <div className="">
-      <h1>Question:{question}</h1>
+    <div className="Details">
+      <h1>{question}</h1>
       <svg onClick={()=>answer()}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -31,6 +40,15 @@ const Question = ({ questionDetails }) => {
           d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
         />
       </svg>
+      <div className="options">
+{
+    options.map(option => <p key={option}>
+        <input type="radio" name="answerName" onClick={()=>checkAnswer(option)} />
+        <span>{option}</span>
+    </p>)
+}
+      </div>
+      <ToastContainer/>
     </div>
   );
 };
