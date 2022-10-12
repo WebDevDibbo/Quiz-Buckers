@@ -10,6 +10,7 @@ import QuizDetails from './components/quizDetail/QuizDetails';
 import ErrorPage from './components/error-page/ErrorPage';
 
 
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -46,19 +47,17 @@ function App() {
     },
     {
        path:'*', element:<ErrorPage></ErrorPage>
-    }
+    },
+    
   ])
 
-  // ReactDOM.createRoot(document.getElementById("root")).render(
-  //   <React.StrictMode>
-  //     <RouterProvider router={router} />
-  //   </React.StrictMode>
-  // );
+  
 
 
   return (
     <div className="App">
       <RouterProvider router = {router}></RouterProvider>
+      
     </div>
   );
 }

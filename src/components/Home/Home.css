@@ -2,5 +2,9 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
-    padding: 100px;
+    padding: 50px;   
+}
+img{
+    width: 550px;
+   margin-top: 20px;
 }
