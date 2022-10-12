@@ -9,7 +9,6 @@ const Navbar = () => {
             <h2>Quiz Buckers</h2>
             <div>
             <Link className='navlink' to='/'>Home</Link>
-            <Link className='navlink' to='/topics'>Topics</Link>
             <Link className='navlink' to='/statistics'>Statistics</Link>
             <Link className='navlink' to='/blog'>Blog</Link>
             </div>

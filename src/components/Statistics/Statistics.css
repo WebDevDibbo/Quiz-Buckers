@@ -1,4 +1,6 @@
 .chart{
-   background-color: tomato;
     
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
 }
