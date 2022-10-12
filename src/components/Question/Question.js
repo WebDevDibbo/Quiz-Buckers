@@ -1,11 +1,18 @@
 import React from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './Question.css'
 
 const Question = ({ questionDetails }) => {
   const { question, correctAnswer, options } = questionDetails;
+
+  const answer = () =>{
+    toast(`correct answer is ${correctAnswer}`)
+  }
   return (
     <div className="">
       <h1>Question:{question}</h1>
-      <svg
+      <svg onClick={()=>answer()}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
